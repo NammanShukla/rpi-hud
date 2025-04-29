@@ -84,6 +84,7 @@ def update():
 
     root.after(5000, update)
 
+
 root = tk.Tk()
 root.geometry("800x480")
 root.configure(bg="black")
@@ -94,18 +95,22 @@ root.resizable(False, False)
 font_big = ("Monaco", 28, "bold")
 font_med = ("Monaco", 16)
 font_small = ("Monaco", 12)
-font_date = ("Monaco", 20, "bold")
+
+font_date = ("Monaco", 25, "bold")
+font_time = ("Monaco", 32, "bold")
+
+font_sidez = ("Monaco", 18)
 
 # Weather Frame
 weather_frame = tk.Frame(root, bg="black")
-weather_frame.place(x=10, y=10)
-weather_lbl = tk.Label(weather_frame, text="", font=font_med, fg="white", bg="black")
+weather_frame.place(x=15, y=10)
+weather_lbl = tk.Label(weather_frame, text="", font=font_sidez, fg="white", bg="black")
 weather_lbl.pack()
 
 # Time + Date Frame
 main_frame = tk.Frame(root, bg="black")
 main_frame.place(relx=0.5, y=10, anchor="n")
-time_lbl = tk.Label(main_frame, font=font_big, fg="white", bg="black")
+time_lbl = tk.Label(main_frame, font=font_time, fg="white", bg="black")
 time_lbl.pack()
 date_lbl = tk.Label(main_frame, font=font_date, fg="white", bg="black")
 date_lbl.pack()
@@ -113,32 +118,51 @@ date_lbl.pack()
 # Timezones Frame
 zones_frame = tk.Frame(root, bg="black")
 zones_frame.place(x=650, y=10)
-ny_lbl = tk.Label(zones_frame, font=font_med, fg="white", bg="black")
-sgt_lbl = tk.Label(zones_frame, font=font_med, fg="white", bg="black")
+ny_lbl = tk.Label(zones_frame, font=font_sidez, fg="white", bg="black")
+sgt_lbl = tk.Label(zones_frame, font=font_sidez, fg="white", bg="black")
 ny_lbl.pack()
 sgt_lbl.pack()
 
 # Server Stats Frame
 server_frame = tk.LabelFrame(root, text="Server Stats", font=font_med, fg="white", bg="black", labelanchor='n')
-server_frame.place(x=50, y=150, width=300, height=200)
+server_frame.place(x=50, y=150, width=300, height=250)
+
 status_lbl = tk.Label(server_frame, font=font_small, fg="red", bg="black")
-status_lbl.pack(pady=5)
+status_lbl.pack(pady=(10, 5))
+
+cpu_text = tk.Label(server_frame, text="CPU:", font=font_small, fg="white", bg="black")
+cpu_text.pack(anchor="w", padx=15)
 cpu_lbl = tk.Label(server_frame, font=font_small, fg="white", bg="black")
-cpu_lbl.pack()
-cpu_bar = tk.Canvas(server_frame, width=120, height=20, bg="grey")
-cpu_bar.pack()
+cpu_lbl.pack(anchor="w", padx=15)
+cpu_bar = tk.Canvas(server_frame, width=250, height=20, bg="grey")
+cpu_bar.pack(pady=(0, 10))
+
+mem_text = tk.Label(server_frame, text="RAM:", font=font_small, fg="white", bg="black")
+mem_text.pack(anchor="w", padx=15)
 mem_lbl = tk.Label(server_frame, font=font_small, fg="white", bg="black")
-mem_lbl.pack()
-mem_bar = tk.Canvas(server_frame, width=120, height=20, bg="grey")
-mem_bar.pack()
+mem_lbl.pack(anchor="w", padx=15)
+mem_bar = tk.Canvas(server_frame, width=250, height=20, bg="grey")
+mem_bar.pack(pady=(0, 10))
 
 # Pi Stats Frame
 pi_frame = tk.LabelFrame(root, text="RPI Stats", font=font_med, fg="white", bg="black", labelanchor='n')
 pi_frame.place(x=450, y=150, width=300, height=200)
-temp_lbl = tk.Label(pi_frame, font=font_small, fg="white", bg="black")
-temp_lbl.pack(pady=10)
-volt_lbl = tk.Label(pi_frame, font=font_small, fg="white", bg="black")
-volt_lbl.pack(pady=10)
 
+temp_text = tk.Label(pi_frame, text="TEMP:", font=font_small, fg="white", bg="black")
+temp_text.pack(anchor="w", padx=15, pady=(10, 0))
+temp_lbl = tk.Label(pi_frame, font=font_small, fg="white", bg="black")
+temp_lbl.pack(anchor="w", padx=15, pady=(0, 10))
+
+volt_text = tk.Label(pi_frame, text="VOLTS:", font=font_small, fg="white", bg="black")
+volt_text.pack(anchor="w", padx=15)
+volt_lbl = tk.Label(pi_frame, font=font_small, fg="white", bg="black")
+volt_lbl.pack(anchor="w", padx=15, pady=(0, 10))
+
+
+footer_lbl = tk.Label(root, text="– Made by Namman Shukla –", font=("Monaco", 14, "italic"), fg="#888888", bg="black")
+footer_lbl.place(relx=0.5, rely=1.0, anchor="s", y=-10)
+
+
+# Initial Update
 update()
 root.mainloop()
