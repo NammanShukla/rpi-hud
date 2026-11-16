@@ -1,0 +1,14 @@
+{
+    "name": "Birthday",
+    "background": "#100B19",
+    "panel": "#21152D",
+    "foreground": "#F5E9FF",
+    "muted": "#AA91BB",
+    "accent": "#C084FC",
+    "highlight": "#F9D976",
+    "good": "#80D6A4",
+    "warning": "#F5BB65",
+    "danger": "#FF718A",
+    "bar_background": "#42304F",
+    "bar_fill": "#C084FC"
+}

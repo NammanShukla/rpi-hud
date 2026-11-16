@@ -1,0 +1,14 @@
+{
+    "name": "Autumn",
+    "background": "#100B09",
+    "panel": "#21140F",
+    "foreground": "#F3DCC7",
+    "muted": "#A17B66",
+    "accent": "#C46A32",
+    "highlight": "#E89A52",
+    "good": "#A1B66A",
+    "warning": "#E8A14A",
+    "danger": "#D84B35",
+    "bar_background": "#40291F",
+    "bar_fill": "#C46A32"
+}

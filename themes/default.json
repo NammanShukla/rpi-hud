@@ -1,0 +1,14 @@
+{
+    "name": "Default",
+    "background": "#080A0F",
+    "panel": "#11151D",
+    "foreground": "#E5E7EB",
+    "muted": "#777F8C",
+    "accent": "#8B9BB4",
+    "highlight": "#FFFFFF",
+    "good": "#50D890",
+    "warning": "#FFB84D",
+    "danger": "#FF5252",
+    "bar_background": "#303744",
+    "bar_fill": "#8B9BB4"
+}

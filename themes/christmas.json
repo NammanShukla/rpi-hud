@@ -1,0 +1,14 @@
+{
+    "name": "Christmas",
+    "background": "#080E0B",
+    "panel": "#102019",
+    "foreground": "#F5F0E6",
+    "muted": "#91A99A",
+    "accent": "#D34B4B",
+    "highlight": "#D9B65D",
+    "good": "#64C78A",
+    "warning": "#E9B65D",
+    "danger": "#FF5555",
+    "bar_background": "#293D31",
+    "bar_fill": "#D34B4B"
+}

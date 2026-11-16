@@ -1,0 +1,14 @@
+{
+    "name": "Winter",
+    "background": "#080E18",
+    "panel": "#101C2B",
+    "foreground": "#E4EDF8",
+    "muted": "#8398B2",
+    "accent": "#76B7E5",
+    "highlight": "#C5E8FF",
+    "good": "#69D6B0",
+    "warning": "#E6BD73",
+    "danger": "#EF7777",
+    "bar_background": "#25384D",
+    "bar_fill": "#76B7E5"
+}

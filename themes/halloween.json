@@ -1,0 +1,14 @@
+{
+    "name": "Halloween",
+    "background": "#0B080F",
+    "panel": "#19101E",
+    "foreground": "#F1E5F5",
+    "muted": "#937C9F",
+    "accent": "#FF792E",
+    "highlight": "#B67AFF",
+    "good": "#8DCB78",
+    "warning": "#FF9E42",
+    "danger": "#FF493D",
+    "bar_background": "#39243E",
+    "bar_fill": "#FF792E"
+}

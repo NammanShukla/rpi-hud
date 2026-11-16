@@ -1,0 +1,20 @@
+{
+    "seasons": [
+        {
+            "name": "summer",
+            "start": "03-01",
+            "end": "09-30"
+        },
+        {
+            "name": "autumn",
+            "start": "10-01",
+            "end": "11-30"
+        },
+        {
+            "name": "winter",
+            "start": "12-01",
+            "end": "02-29"
+        }
+    ],
+    "default": "default"
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Summer",
+    "background": "#100E09",
+    "panel": "#1C1810",
+    "foreground": "#F8EBD2",
+    "muted": "#A18D6A",
+    "accent": "#E6A23C",
+    "highlight": "#FFD166",
+    "good": "#8DCB78",
+    "warning": "#FFB347",
+    "danger": "#F06449",
+    "bar_background": "#403525",
+    "bar_fill": "#E6A23C"
+}

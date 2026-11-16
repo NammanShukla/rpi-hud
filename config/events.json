@@ -1,0 +1,24 @@
+{
+    "events": [
+        {
+            "name": "birthday",
+            "start": "09-02",
+            "end": "09-02"
+        },
+        {
+            "name": "halloween",
+            "start": "10-31",
+            "end": "10-31"
+        },
+        {
+            "name": "christmas",
+            "start": "12-20",
+            "end": "12-26"
+        },
+        {
+            "name": "new_year",
+            "start": "12-30",
+            "end": "01-02"
+        }
+    ]
+}

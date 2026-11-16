@@ -1,0 +1,14 @@
+{
+    "name": "New Year",
+    "background": "#080B17",
+    "panel": "#11182A",
+    "foreground": "#F4F1E8",
+    "muted": "#8D9BB5",
+    "accent": "#D9B85F",
+    "highlight": "#E9E9F2",
+    "good": "#75D9AE",
+    "warning": "#E9C46A",
+    "danger": "#EF7777",
+    "bar_background": "#303951",
+    "bar_fill": "#D9B85F"
+}
