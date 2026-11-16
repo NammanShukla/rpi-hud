@@ -1,5 +1,5 @@
 # rpi-hud
-Making a heads up display for my raspberry pi 3b+ 
+Making a heads up display for my raspberry pi 3b+ (Updated)
 
 ## Features
 
@@ -9,4 +9,6 @@ Making a heads up display for my raspberry pi 3b+
 
 - Shows Date and Time with the current weather 
 
-- Has a nice UI Design
+- Has an AQI Section 
+
+- Added Themes for Events and Festivals. 
